@@ -13,7 +13,7 @@ import java.util.List;
  */
 @FeignClient(value = "alh-tms")
 public interface TmsFeign {
-    @GetMapping(value = "/v1/student")
-    public List<Object> getAll();
+    @GetMapping(value = "/student/v1/student")
+    List<Object> getAll();
 }
 
