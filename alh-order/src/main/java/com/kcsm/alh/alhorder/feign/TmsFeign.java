@@ -1,8 +1,8 @@
 package com.kcsm.alh.alhorder.feign;
+import com.kcsm.alh.alhcommon.vo.ResponseVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import java.util.List;
 
 /**
  * Description: 服务调用接口
@@ -14,6 +14,6 @@ import java.util.List;
 @FeignClient(value = "alh-tms")
 public interface TmsFeign {
     @GetMapping(value = "/student/v1/student")
-    List<Object> getAll();
+    ResponseVO getAll();
 }
 
