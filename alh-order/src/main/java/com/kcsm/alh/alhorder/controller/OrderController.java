@@ -21,7 +21,7 @@ public class OrderController {
     @Resource
     private TmsFeign tmsFeign;
     @RequestMapping("/getAll")
-    public ResponseVO<Map> csinfo(){
+    public ResponseVO csinfo(){
         return tmsFeign.getAll();
     }
 

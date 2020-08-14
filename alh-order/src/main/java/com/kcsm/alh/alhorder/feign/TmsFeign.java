@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @since JDK 1.8
  * date: 2020/8/13 14:13
  */
-@FeignClient(value = "alh-tms")
+@FeignClient(value = "alh-tms" ,fallback = TmsFeignHystric.class)
 public interface TmsFeign {
     @GetMapping(value = "/student/v1/student")
     ResponseVO getAll();
