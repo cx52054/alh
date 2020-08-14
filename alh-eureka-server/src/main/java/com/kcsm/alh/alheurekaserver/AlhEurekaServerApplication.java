@@ -1,5 +1,7 @@
 package com.kcsm.alh.alheurekaserver;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,9 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableEurekaServer
 @RestController
 public class AlhEurekaServerApplication {
-
+    private static Logger logger = LoggerFactory.getLogger(AlhEurekaServerApplication.class);
     public static void main(String[] args) {
         SpringApplication.run(AlhEurekaServerApplication.class, args);
+        logger.info("eureka注册服务中心-启动成功...");
     }
 
     /**

@@ -45,11 +45,11 @@
         </plugins>
     </build>
 
-    <modules>
-        <module>alh-eureka-server</module>
-        <module>alh-config-server</module>
-        <module>alh-tms</module>
-        <module>alh-order</module>
-    </modules>
+<!--    <modules>-->
+<!--        <module>alh-config-server</module>-->
+<!--        <module>alh-eureka-server</module>-->
+<!--        <module>alh-tms</module>-->
+<!--        <module>alh-order</module>-->
+<!--    </modules>-->
 
 </project>
